@@ -16,3 +16,20 @@ target_link_libraries(youBot_HelloWorldDemo
 	${catkin_LIBRARIES}
 )
 
+OPTION(USE_SETCAP "Set permissions to access ethernet interface without sudo" ON)
+
+SET(SUDO_COMMAND gksudo)
+IF($ENV{USE_NORMAL_SUDO})
+    SET(SUDO_COMMAND sudo)
+ENDIF($ENV{USE_NORMAL_SUDO})
+
+IF(USE_SETCAP)
+add_custom_command(TARGET youBot_HelloWorldDemo POST_BUILD
+    COMMAND ${SUDO_COMMAND} setcap cap_net_raw+ep $<TARGET_FILE:youBot_HelloWorldDemo>
+)    
+endif(USE_SETCAP)
+
+
+install(TARGETS youBot_HelloWorldDemo
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
