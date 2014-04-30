@@ -42,7 +42,7 @@
 #include <signal.h>
 #include <curses.h>
 
-#include "youbot/YouBotBase.hpp"
+#include "youbot_driver/youbot/YouBotBase.hpp"
 
 
 using namespace std;

@@ -37,8 +37,8 @@
 *
 ******************************************************************************/
 
-#include "youbot/YouBotBase.hpp"
-#include "youbot/YouBotManipulator.hpp"
+#include "youbot_driver/youbot/YouBotBase.hpp"
+#include "youbot_driver/youbot/YouBotManipulator.hpp"
 
 using namespace youbot;
 
