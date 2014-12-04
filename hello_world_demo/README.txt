@@ -19,15 +19,24 @@ Installation
 ------------
 
 We assume, that you have installed the KUKA youBot API already. Further
-instructions to install the API can be found on http://youbot-store.com
+instructions to install the API can be found on http://www.youbot-store.com
 
-$ cd <your_path>/hello_world_demo
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make
+If not already done, download or checkout the demo sources into a catkin
+folder. Assuming that you created such a catkin folder at ~/catkin_ws, this can be
+done e.g. via
 
-The binaries will be generated in the bin folder.
+$ cd ~/catkin_ws/src
+$ git clone http://github.com/wnowak/youbot_applications
+
+In order to compile the demo, enter
+
+$ cd ~/catkin_ws
+$ catkin_make
+
+During compilation a window should appear to enter your password. This is
+needed to give the required access rights to the generated binary in order to run
+the EtherCAT master. Alternatively the setcap command used here can be also run
+manually after compilation finished.
 
 
 Usage
@@ -35,8 +44,8 @@ Usage
 
 To start the application use:
 
-$ cd <your_path>/hello_world_demo
-$ sudo ./youBot_HelloWorldDemo
+$ rosrun hello_world_demo youBot_HelloWorldDemo 
+
 
 
 License
