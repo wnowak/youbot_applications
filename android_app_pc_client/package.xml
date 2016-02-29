@@ -1,0 +1,24 @@
+<package>
+  <name>youbot_android</name>
+  <description>
+    youbot_android_app
+  </description>
+  <author>Rhama Dwiputra</author>
+  <maintainer email="x@x.de">x</maintainer>
+  <license>BSD</license>
+  <version>0.1.0</version>
+  <url>https://github.com/wnowak/youbot_applications/tree/master/android_app_pc_client</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>bluez</build_depend>
+  <build_depend>lbluetooth</build_depend>
+  <build_depend>youbot_driver</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>bluez</run_depend>
+  <run_depend>lbluetooth</run_depend>
+  <run_depend>youbot_driver</run_depend>
+
+</package>
+
+

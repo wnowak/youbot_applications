@@ -17,7 +17,6 @@ FIND_PATH(BLUETOOTH_INCLUDE_DIR NAMES bluetooth.h
   /usr/local/include/bluetooth/
   /opt/local/include/
   /opt/local/include/bluetooth/
-  NO_DEFAULT_PATH
 )
 
 FIND_LIBRARY(BLUETOOTH_LIBRARIES NAMES "bluetooth"
@@ -29,7 +28,6 @@ FIND_LIBRARY(BLUETOOTH_LIBRARIES NAMES "bluetooth"
   /usr/lib
   /usr/local/lib
   /opt/local/lib
-  NO_DEFAULT_PATH
 )
 
 include(FindPackageHandleStandardArgs)
