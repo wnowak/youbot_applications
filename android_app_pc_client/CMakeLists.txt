@@ -23,4 +23,6 @@ target_link_libraries(youbot_android
 	${BLUETOOTH_LIBRARIES}
 )
 
-
+install(TARGETS youbot_android
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

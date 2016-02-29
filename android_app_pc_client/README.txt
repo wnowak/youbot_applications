@@ -13,28 +13,32 @@ The common way to install an APK file (Android Package) is to use app installer 
 youBotAndroid Installation
 -----------------------
 
-youBotAndroid installation is similar with the installation of other KUKA youBot application such as Hello_World_demo or Joypad_application. 
-After KUKA youBot application installation you will have a directory for KUKA youBot application
-youBotAndroid installation require BlueZ development library and KUKA youBot API.
+You must have the KUKA youBot API installed. Further instructions to install the API can be found on http://www.youbot-store.com
 
-	- copy the folder "android" to KUKA youBot application directory
-	- Add BlueZ development library (modification on CMakeList.txt or manually copy BlueZ library into folder "include" in KUKA youBot application directory)
-	- on directory "android/build"
-		$ cmake ..
-		$ make
+If not already done, download or checkout the demo sources into a catkin folder.
+Assuming that you created such a catkin folder at ~/catkin_ws, this can be done e.g. via
 
-If the installation is successful, you will found "youBotAndroid" in directory "android/bin"
-	- 
+$ cd ~/catkin_ws/src
+$ git clone http://github.com/wnowak/youbot_applications
+
+In order to compile the demo, enter
+
+$ cd ~/catkin_ws
+$ catkin_make
+
+You can then run the program using
+
+$ sudo devel/lib/youbot_android/youbot_android
 
 -----------------------
 Running YouBot App
 -----------------------
 After YouBot.APK and youBotAndroid are installed, KUKA youBot can now be controlled from youBot App.
 It is suggested that the KUKA youBot PC are already paired as bluetooth device with Android mobile device before running YouBot App.
-	- Run youBotAndroid on KUKA youBot PC 
+	- Run youbot_android on KUKA youBot PC using
 	- Run YouBot App on Android mobile device
 	- Click "Select Device" from main menu
 	- Select KUKA youBot PC. After selecting the device, YouBot app will return automatically to the main menu
 	- Select controller mode (DRIVE mode or SHIFT mode)
-	- Once the controller selected, YouBot App will automatically try to connect with the socket opened by youBotAndroid on PC.
+	- Once the controller selected, YouBot App will automatically try to connect with the socket opened by youbot_android on PC.
 	- Control KUKA youBot.
