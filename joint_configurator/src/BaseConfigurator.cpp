@@ -49,7 +49,7 @@
  *
  ****************************************************************/
 
-#include "youbot/YouBotBase.hpp"
+#include "youbot_driver/youbot/YouBotBase.hpp"
 #include "JointConfigurator.hpp"
 
 using namespace std;

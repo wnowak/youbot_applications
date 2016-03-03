@@ -57,20 +57,20 @@
 #include <iostream>
 #include <vector>
 #include <signal.h>
-#include "youbot/YouBotJointParameter.hpp"
-#include "youbot/YouBotGripper.hpp"
-#include "youbot/YouBotBase.hpp"
-#include "youbot/YouBotManipulator.hpp"
+#include "youbot_driver/youbot/YouBotJointParameter.hpp"
+#include "youbot_driver/youbot/YouBotGripper.hpp"
+#include "youbot_driver/youbot/YouBotBase.hpp"
+#include "youbot_driver/youbot/YouBotManipulator.hpp"
 #include "boost/date_time/posix_time/posix_time.hpp"
 #include <vector>
 #include <sstream>
 #include <boost/limits.hpp>
-#include "generic/Logger.hpp"
-#include "generic/Units.hpp"
-#include "generic/Time.hpp"
-#include "generic/Exceptions.hpp"
-#include "generic-joint/JointParameter.hpp"
-#include "youbot/YouBotJointParameterReadOnly.hpp"
+#include "youbot_driver/generic/Logger.hpp"
+#include "youbot_driver/generic/Units.hpp"
+#include "youbot_driver/generic/Time.hpp"
+#include "youbot_driver/generic/Exceptions.hpp"
+#include "youbot_driver/generic-joint/JointParameter.hpp"
+#include "youbot_driver/youbot/YouBotJointParameterReadOnly.hpp"
 
 enum part {
   BASE,
