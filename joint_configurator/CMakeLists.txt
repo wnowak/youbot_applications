@@ -33,7 +33,7 @@ add_definitions(-DCONFIG_DIR="${JOINT_CONFIGURATOR_CONFIG_DIR}")
 
 add_definitions(-DYOUBOT_CONFIGURATIONS_DIR="${youbot_driver_CONFIG_DIR}")
 
-add_definitions(youbot_joint_configurator
+add_executable(youbot_joint_configurator
   src/JointConfiguratorMain.cpp
 )
 
